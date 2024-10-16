@@ -1,7 +1,7 @@
 "use client";
 
 import { locations, types } from "@/utils/Constants";
-import React from "react";
+import React, { Suspense } from "react";
 import Select from "react-select";
 import { useQuery } from "@tanstack/react-query";
 import { fetchProperties } from "@/services/remax";
@@ -13,7 +13,7 @@ const locationsMap = locations.map((i) => ({
   value: i.id,
 }));
 
-const page = () => {
+const Buscar = () => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
@@ -236,8 +236,8 @@ const page = () => {
         {isLoading && <h3>Cargando...</h3>}
         {data && data.length && (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
-            {data.map((i) => (
-              <Card property={i} />
+            {data.map((i, index) => (
+              <Card key={index} property={i} />
             ))}
           </div>
         )}
@@ -246,4 +246,10 @@ const page = () => {
   );
 };
 
-export default page;
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Buscar />
+    </Suspense>
+  );
+}
