@@ -1,663 +1,704 @@
+export type Location = {
+  id: number;
+  description: string;
+};
+
 export const locations = [
   {
     id: 1,
-    description: "DISTRITO NACIONAL",
+    description: "Distrito Nacional",
   },
   {
     id: 1,
-    description: "SANTO DOMINGO DE GUZMÁN",
+    description: "Santo Domingo De Guzmán",
   },
   {
     id: 148,
-    description: "SANTO DOMINGO ESTE",
+    description: "Santo Domingo Este",
   },
   {
     id: 149,
-    description: "SANTO DOMINGO OESTE",
+    description: "Santo Domingo Oeste",
   },
   {
     id: 150,
-    description: "SANTO DOMINGO NORTE",
+    description: "Santo Domingo Norte",
   },
   {
     id: 2,
-    description: "AZUA",
+    description: "Azua",
   },
   {
     id: 3,
-    description: "LAS CHARCAS",
+    description: "Las Charcas",
   },
   {
     id: 4,
-    description: "LAS YAYAS DE VIAJAMA",
+    description: "Las Yayas De Viajama",
   },
   {
     id: 5,
-    description: "PADRE LAS CASAS",
+    description: "Padre Las Casas",
   },
   {
     id: 6,
-    description: "PERALTA",
+    description: "Peralta",
   },
   {
     id: 7,
-    description: "SABANA YEGUA",
+    description: "Sabana Yegua",
   },
   {
     id: 8,
-    description: "PUEBLO VIEJO",
+    description: "Pueblo Viejo",
   },
   {
     id: 9,
-    description: "TÁBARA ARRIBA",
+    description: "Tábara Arriba",
   },
   {
     id: 10,
-    description: "GUAYABAL",
+    description: "Guayabal",
   },
   {
     id: 11,
-    description: "ESTEBANÍA",
+    description: "Estebanía",
   },
   {
     id: 12,
-    description: "NEIBA",
+    description: "Neiba",
   },
   {
     id: 13,
-    description: "GALVÁN",
+    description: "Galván",
   },
   {
     id: 14,
-    description: "TAMAYO",
+    description: "Tamayo",
   },
   {
     id: 15,
-    description: "VILLA JARAGUA",
+    description: "Villa Jaragua",
   },
   {
     id: 16,
-    description: "LOS RÍOS",
+    description: "Los Ríos",
   },
   {
     id: 17,
-    description: "BARAHONA",
+    description: "Barahona",
   },
   {
     id: 18,
-    description: "CABRAL",
+    description: "Cabral",
   },
   {
     id: 19,
-    description: "ENRIQUILLO",
+    description: "Enriquillo",
   },
   {
     id: 20,
-    description: "PARAÍSO",
+    description: "Paraíso",
   },
   {
     id: 21,
-    description: "VICENTE NOBLE",
+    description: "Vicente Noble",
   },
   {
     id: 22,
-    description: "EL PEÑÓN",
+    description: "El Peñón",
   },
   {
     id: 23,
-    description: "LA CIÉNAGA",
+    description: "La Ciénaga",
   },
   {
     id: 24,
-    description: "FUNDACIÓN",
+    description: "Fundación",
   },
   {
     id: 25,
-    description: "LAS SALINAS",
+    description: "Las Salinas",
   },
   {
     id: 26,
-    description: "POLO",
+    description: "Polo",
   },
   {
     id: 27,
-    description: "JAQUIMEYES",
+    description: "Jaquimeyes",
   },
   {
     id: 28,
-    description: "DAJABÓN",
+    description: "Dajabón",
   },
   {
     id: 29,
-    description: "LOMA DE CABRERA",
+    description: "Loma De Cabrera",
   },
   {
     id: 30,
-    description: "PARTIDO",
+    description: "Partido",
   },
   {
     id: 31,
-    description: "RESTAURACIÓN",
+    description: "Restauración",
   },
   {
     id: 32,
-    description: "EL PINO",
+    description: "El Pino",
   },
   {
     id: 33,
-    description: "SAN FRANCISCO DE MACORÍS",
+    description: "San Francisco De Macorís",
   },
   {
     id: 34,
-    description: "ARENOSO",
+    description: "Arenoso",
   },
   {
     id: 35,
-    description: "CASTILLO",
+    description: "Castillo",
   },
   {
     id: 36,
-    description: "PIMENTEL",
+    description: "Pimentel",
   },
   {
     id: 37,
-    description: "VILLA RIVA",
+    description: "Villa Riva",
   },
   {
     id: 38,
-    description: "LAS GUÁRANAS",
+    description: "Las Guáranas",
   },
   {
     id: 39,
-    description: "EUGENIO MARÍA DE HOSTOS",
+    description: "Eugenio María De Hostos",
   },
   {
     id: 40,
-    description: "COMENDADOR",
+    description: "Comendador",
   },
   {
     id: 41,
-    description: "BÁNICA",
+    description: "Bánica",
   },
   {
     id: 42,
-    description: "EL LLANO",
+    description: "El Llano",
   },
   {
     id: 43,
-    description: "HONDO VALLE",
+    description: "Hondo Valle",
   },
   {
     id: 44,
-    description: "PEDRO SANTANA",
+    description: "Pedro Santana",
   },
   {
     id: 45,
-    description: "JUAN SANTIAGO",
+    description: "Juan Santiago",
   },
   {
     id: 46,
-    description: "EL SEIBO",
+    description: "El Seibo",
   },
   {
     id: 47,
-    description: "MICHES",
+    description: "Miches",
   },
   {
     id: 48,
-    description: "MOCA",
+    description: "Moca",
   },
   {
     id: 49,
-    description: "CAYETANO GERMOSÈN",
+    description: "Cayetano Germosèn",
   },
   {
     id: 50,
-    description: "GASPAR HERNÁNDEZ",
+    description: "Gaspar Hernández",
   },
   {
     id: 51,
-    description: "JAMAO AL NORTE",
+    description: "Jamao Al Norte",
   },
   {
     id: 52,
-    description: "JIMANÍ",
+    description: "Jimaní",
   },
   {
     id: 53,
-    description: "DUVERGÉ",
+    description: "Duvergé",
   },
   {
     id: 54,
-    description: "LA DESCUBIERTA",
+    description: "La Descubierta",
   },
   {
     id: 55,
-    description: "POSTRER RÍO",
+    description: "Postrer Río",
   },
   {
     id: 56,
-    description: "CRISTÓBAL",
+    description: "Cristóbal",
   },
   {
     id: 57,
-    description: "MELLA",
+    description: "Mella",
   },
   {
     id: 58,
-    description: "HIGÜEY",
+    description: "Higüey",
   },
   {
     id: 59,
-    description: "SAN RAFAEL DEL YUMA",
+    description: "San Rafael Del Yuma",
   },
   {
     id: 60,
-    description: "LA ROMANA",
+    description: "La Romana",
   },
   {
     id: 61,
-    description: "GUAYMATE",
+    description: "Guaymate",
   },
   {
     id: 62,
-    description: "VILLA HERMOSA",
+    description: "Villa Hermosa",
   },
   {
     id: 63,
-    description: "LA VEGA",
+    description: "La Vega",
   },
   {
     id: 64,
-    description: "CONSTANZA",
+    description: "Constanza",
   },
   {
     id: 65,
-    description: "JARABACOA",
+    description: "Jarabacoa",
   },
   {
     id: 66,
-    description: "JIMA ABAJO",
+    description: "Jima Abajo",
   },
   {
     id: 67,
-    description: "NAGUA",
+    description: "Nagua",
   },
   {
     id: 68,
-    description: "CABRERA",
+    description: "Cabrera",
   },
   {
     id: 69,
-    description: "EL FACTOR",
+    description: "El Factor",
   },
   {
     id: 70,
-    description: "RÍO SAN JUAN",
+    description: "Río San Juan",
   },
   {
     id: 71,
-    description: "MONTE CRISTI",
+    description: "Monte Cristi",
   },
   {
     id: 72,
-    description: "CASTAÑUELAS",
+    description: "Castañuelas",
   },
   {
     id: 73,
-    description: "GUAYUBÍN",
+    description: "Guayubín",
   },
   {
     id: 74,
-    description: "LAS MATAS DE SANTA CRUZ",
+    description: "Las Matas De Santa Cruz",
   },
   {
     id: 75,
-    description: "PEPILLO SALCEDO (MANZANILLO)",
+    description: "Pepillo Salcedo (manzanillo)",
   },
   {
     id: 76,
-    description: "VILLA VÁSQUEZ",
+    description: "Villa Vásquez",
   },
   {
     id: 77,
-    description: "PEDERNALES",
+    description: "Pedernales",
   },
   {
     id: 78,
-    description: "OVIEDO",
+    description: "Oviedo",
   },
   {
     id: 79,
-    description: "BANÍ",
+    description: "Baní",
   },
   {
     id: 80,
-    description: "NIZAO",
+    description: "Nizao",
   },
   {
     id: 81,
-    description: "PUERTO PLATA",
+    description: "Puerto Plata",
   },
   {
     id: 82,
-    description: "ALTAMIRA",
+    description: "Altamira",
   },
   {
     id: 83,
-    description: "GUANANICO",
+    description: "Guananico",
   },
   {
     id: 84,
-    description: "IMBERT",
+    description: "Imbert",
   },
   {
     id: 85,
-    description: "LOS HIDALGOS",
+    description: "Los Hidalgos",
   },
   {
     id: 86,
-    description: "LUPERÓN",
+    description: "Luperón",
   },
   {
     id: 87,
-    description: "SOSÚA",
+    description: "Sosúa",
   },
   {
     id: 88,
-    description: "VILLA ISABELA",
+    description: "Villa Isabela",
   },
   {
     id: 89,
-    description: "VILLA MONTELLANO",
+    description: "Villa Montellano",
   },
   {
     id: 90,
-    description: "SALCEDO",
+    description: "Salcedo",
   },
   {
     id: 91,
-    description: "TENARES",
+    description: "Tenares",
   },
   {
     id: 92,
-    description: "VILLA TAPIA",
+    description: "Villa Tapia",
   },
   {
     id: 93,
-    description: "SAMANÁ",
+    description: "Samaná",
   },
   {
     id: 94,
-    description: "SÁNCHEZ",
+    description: "Sánchez",
   },
   {
     id: 95,
-    description: "SAMANÁ LAS TERRENAS",
+    description: "Samaná Las Terrenas",
   },
   {
     id: 96,
-    description: "SAN CRISTÓBAL",
+    description: "San Cristóbal",
   },
   {
     id: 97,
-    description: "SABANA GRANDE DE PALENQUE",
+    description: "Sabana Grande De Palenque",
   },
   {
     id: 98,
-    description: "BAJOS DE HAINA",
+    description: "Bajos De Haina",
   },
   {
     id: 99,
-    description: "CAMBITA GARABITOS",
+    description: "Cambita Garabitos",
   },
   {
     id: 100,
-    description: "VILLA ALTAGRACIA",
+    description: "Villa Altagracia",
   },
   {
     id: 101,
-    description: "YAGUATE",
+    description: "Yaguate",
   },
   {
     id: 102,
-    description: "SAN GREGORIO DE NIGUA",
+    description: "San Gregorio De Nigua",
   },
   {
     id: 103,
-    description: "LOS CACAOS",
+    description: "Los Cacaos",
   },
   {
     id: 104,
-    description: "SAN JUAN",
+    description: "San Juan",
   },
   {
     id: 105,
-    description: "BOHECHÍO",
+    description: "Bohechío",
   },
   {
     id: 106,
-    description: "EL CERCADO",
+    description: "El Cercado",
   },
   {
     id: 107,
-    description: "JUAN DE HERRERA",
+    description: "Juan De Herrera",
   },
   {
     id: 108,
-    description: "LAS MATAS DE FARFÁN",
+    description: "Las Matas De Farfán",
   },
   {
     id: 109,
-    description: "VALLEJUELO",
+    description: "Vallejuelo",
   },
   {
     id: 110,
-    description: "SAN PEDRO DE MACORÍS",
+    description: "San Pedro De Macorís",
   },
   {
     id: 111,
-    description: "LOS LLANOS",
+    description: "Los Llanos",
   },
   {
     id: 112,
-    description: "RAMÓN SANTANA",
+    description: "Ramón Santana",
   },
   {
     id: 113,
-    description: "CONSUELO",
+    description: "Consuelo",
   },
   {
     id: 114,
-    description: "QUISQUEYA",
+    description: "Quisqueya",
   },
   {
     id: 115,
-    description: "GUAYACANES",
+    description: "Guayacanes",
   },
   {
     id: 116,
-    description: "COTUÍ",
+    description: "Cotuí",
   },
   {
     id: 117,
-    description: "CEVICOS",
+    description: "Cevicos",
   },
   {
     id: 118,
-    description: "FANTINO",
+    description: "Fantino",
   },
   {
     id: 119,
-    description: "LA MATA",
+    description: "La Mata",
   },
   {
     id: 120,
-    description: "SANTIAGO",
+    description: "Santiago",
   },
   {
     id: 121,
-    description: "BISONÓ",
+    description: "Bisonó",
   },
   {
     id: 122,
-    description: "JÁNICO",
+    description: "Jánico",
   },
   {
     id: 123,
-    description: "LICEY AL MEDIO",
+    description: "Licey Al Medio",
   },
   {
     id: 124,
-    description: "SAN JOSÉ DE LAS MATAS",
+    description: "San José De Las Matas",
   },
   {
     id: 125,
-    description: "TAMBORIL",
+    description: "Tamboril",
   },
   {
     id: 126,
-    description: "VILLA GONZÁLEZ",
+    description: "Villa González",
   },
   {
     id: 127,
-    description: "PUÑAL",
+    description: "Puñal",
   },
   {
     id: 128,
-    description: "SAN IGNACIO DE SABANETA",
+    description: "San Ignacio De Sabaneta",
   },
   {
     id: 129,
-    description: "VILLA LOS ALMÁCIGOS",
+    description: "Villa Los Almácigos",
   },
   {
     id: 130,
-    description: "MONCIÓN",
+    description: "Monción",
   },
   {
     id: 131,
-    description: "MAO",
+    description: "Mao",
   },
   {
     id: 132,
-    description: "ESPERANZA",
+    description: "Esperanza",
   },
   {
     id: 133,
-    description: "LAGUNA SALADA",
+    description: "Laguna Salada",
   },
   {
     id: 134,
-    description: "BONAO",
+    description: "Bonao",
   },
   {
     id: 135,
-    description: "MAIMÓN",
+    description: "Maimón",
   },
   {
     id: 136,
-    description: "PIEDRA BLANCA",
+    description: "Piedra Blanca",
   },
   {
     id: 137,
-    description: "MONTE PLATA",
+    description: "Monte Plata",
   },
   {
     id: 138,
-    description: "BAYAGUANA",
+    description: "Bayaguana",
   },
   {
     id: 139,
-    description: "SABANA GRANDE DE BOYÁ",
+    description: "Sabana Grande De Boyá",
   },
   {
     id: 140,
-    description: "YAMASÁ",
+    description: "Yamasá",
   },
   {
     id: 141,
-    description: "PERALVILLO",
+    description: "Peralvillo",
   },
   {
     id: 142,
-    description: "HATO MAYOR",
+    description: "Hato Mayor",
   },
   {
     id: 143,
-    description: "SABANA DE LA MAR",
+    description: "Sabana De La Mar",
   },
   {
     id: 144,
-    description: "EL VALLE",
+    description: "El Valle",
   },
   {
     id: 145,
-    description: "SAN JOSÉ DE OCOA",
+    description: "San José De Ocoa",
   },
   {
     id: 146,
-    description: "SABANA LARGA",
+    description: "Sabana Larga",
   },
   {
     id: 147,
-    description: "RANCHO ARRIBA",
+    description: "Rancho Arriba",
   },
   {
     id: 151,
-    description: "BOCA CHICA",
+    description: "Boca Chica",
   },
   {
     id: 152,
-    description: "SAN ANTONIO DE GUERRA",
+    description: "San Antonio De Guerra",
   },
   {
     id: 153,
-    description: "LOS ALCARRIZOS",
+    description: "Los Alcarrizos",
   },
   {
     id: 154,
-    description: "PEDRO BRAND",
+    description: "Pedro Brand",
   },
   {
     id: 155,
-    description: "NUEVA ROMANA",
+    description: "Nueva Romana",
   },
   {
     id: 432,
-    description: "INTERNACIONALES",
+    description: "Internacionales",
   },
   {
     id: 433,
-    description: "BAVARO",
+    description: "Bavaro",
   },
   {
     id: 434,
-    description: "PUNTA CANA",
+    description: "Punta Cana",
   },
   {
     id: 435,
-    description: "UVERO ALTO",
+    description: "Uvero Alto",
   },
   {
     id: 436,
-    description: "MACAO",
+    description: "Macao",
   },
   {
     id: 437,
-    description: "CAP CANA",
+    description: "Cap Cana",
   },
   {
     id: 438,
-    description: "CABEZA DE TORO",
+    description: "Cabeza De Toro",
   },
   {
     id: 439,
-    description: "VERON",
+    description: "Veron",
   },
   {
     id: 440,
-    description: "BAYAHIBE",
+    description: "Bayahibe",
+  },
+];
+
+export type Region = { label: string; value: string; locationIds: number[] };
+
+export const regions = [
+  {
+    label: "Santo Domingo",
+    value: "santo domingo",
+    locationIds: [1, 148, 149, 150, 153, 154],
+  },
+  {
+    label: "Este",
+    value: "este",
+    locationIds: [
+      46, 47, 58, 60, 110, 115, 137, 138, 151, 433, 434, 435, 436, 437, 438,
+      439, 440,
+    ],
+  },
+  {
+    label: "Norte",
+    value: "norte",
+    locationIds: [
+      33, 34, 35, 36, 37, 38, 39, 48, 49, 50, 51, 63, 64, 65, 66, 67, 68, 70,
+      71, 81, 93, 95, 116, 120, 123, 124, 125, 126, 130, 131, 134,
+    ],
+  },
+  {
+    label: "Sur",
+    value: "sur",
+    locationIds: [
+      2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 52,
+      53, 54, 55, 56, 57, 77, 78, 79, 80, 96, 97, 98, 99, 100, 102, 103, 104,
+      106, 108, 145,
+    ],
   },
 ];
 
