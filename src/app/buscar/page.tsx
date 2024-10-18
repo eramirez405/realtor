@@ -380,17 +380,6 @@ const Buscar = () => {
                     textTransform: "capitalize",
                     background: state.isSelected ? "#DEEBFF" : "white",
                   }),
-                  menu: (base) => ({
-                    ...base,
-                    transition:
-                      "opacity 0.2s ease-in-out, transform 0.2s ease-in-out",
-                    opacity: 0,
-                    transform: "translateY(-10px)",
-                    "&[data-open]": {
-                      opacity: 1,
-                      transform: "translateY(0)",
-                    },
-                  }),
                   singleValue: (base) => ({
                     ...base,
                     textTransform: "capitalize",
