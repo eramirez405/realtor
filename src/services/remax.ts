@@ -1,6 +1,7 @@
 import { QueryFunctionContext } from "@tanstack/react-query";
 
 export type Property = {
+  id: string;
   business_type: string;
   realstate_type: string;
   city: string;

@@ -9,6 +9,7 @@ type Props = {
 
 const Card = ({
   property: {
+    id,
     business_type,
     realstate_type,
     sector,
@@ -29,7 +30,7 @@ const Card = ({
     <div className="border border-gray-200 rounded-lg shadow-md">
       <div className="flex-1 rounded-t rounded-b-none overflow-hidden">
         <a
-          href="https://remaxrd.com/propiedad/Proyecto/179022?referer=16987"
+          href={`https://remaxrd.com/propiedad/Proyecto/${id}?referer=16987`}
           className="flex flex-wrap no-underline hover:no-underline"
         >
           <div className="w-full h-64 overflow-hidden flex items-center justify-center mb-2">
