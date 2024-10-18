@@ -223,7 +223,7 @@ const Form = () => {
             </li>
           </ol>
         </div>
-        <div className="basis-1/2 self-center max-h-72 overflow-y-auto p-6 sm:p-10">
+        <div className="basis-1/2 self-center max-h-72 overflow-y-auto p-2 sm:p-10">
           <ol className="space-y-4">
             {formStep === 0 &&
               business.map((item) => {
