@@ -542,17 +542,20 @@ const pros = [
 const page = () => {
   return (
     <div className="grid grid-flow-row-dense grid-cols-1 md:grid-cols-3 mt-14">
-      <div className="col-span-2 text-white p-6">
+      <div
+        className="col-span-2 text-white p-6"
+        style={{ background: "black" }}
+      >
         <h1 className="text-xl mb-2">Bayahíbe</h1>
 
-        <p className="font-thin">
+        <p className="font-extralight">
           Descubre la vida que siempre soñaste en Bayahibe: Casas de lujo,
           apartamentos junto al mar y oportunidades de inversión únicas.
         </p>
 
         <br />
         <section>
-          <p className="font-thin tracking-wide">
+          <p className="font-extralight tracking-wide">
             Ubicado en la costa del Caribe de la República Dominicana, es mucho
             más que un simple destino turístico. Este pintoresco pueblo costero
             combina un estilo de vida relajado con una infraestructura en
@@ -570,28 +573,28 @@ const page = () => {
           </h3>
 
           <ol>
-            <li className="font-thin tracking-wide">
+            <li className="font-extralight tracking-wide">
               <b>Ubicación privilegiada</b>: Bayahíbe se encuentra a sólo una
               hora del Aeropuerto Internacional de Punta Cana, ofreciendo fácil
               acceso desde cualquier parte del mundo. Además, su proximidad a
               playas paradisíacas y atracciones naturales garantiza una
               experiencia de vida excepcional.
             </li>
-            <li className="font-thin tracking-wide">
+            <li className="font-extralight tracking-wide">
               <b>Calidad de vida</b>: Vivir en Bayahíbe significa disfrutar de
               un entorno tranquilo, seguro y rodeado de naturaleza. Las
               actividades al aire libre, como el buceo, el snorkel y las
               excursiones a islas cercanas como Saona y Catalina, hacen de esta
               zona un lugar perfecto para los amantes de la naturaleza y el mar.
             </li>
-            <li className="font-thin tracking-wide">
+            <li className="font-extralight tracking-wide">
               <b>Crecimiento turístico</b>: La transformación de Bayahíbe en un
               polo turístico ha impulsado la construcción de infraestructuras
               modernas, incluyendo complejos hoteleros, restaurantes y
               servicios. Esto aumenta el valor de las propiedades y garantiza un
               retorno de inversión atractivo.
             </li>
-            <li className="font-thin">
+            <li className="font-extralight">
               <b>Opciones inmobiliarias diversas</b>: Desde villas frente al mar
               hasta apartamentos modernos y terrenos para desarrollo, Bayahíbe
               ofrece una amplia gama de opciones para diferentes presupuestos y
