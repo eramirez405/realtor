@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 import Select from "react-select";
 import { useQuery } from "@tanstack/react-query";
 import { fetchProperties } from "@/services/remax";
-import Card from "./Card";
+import Card from "../../components/Search/Card";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
 const locationsMap = locations.map((i) => ({
